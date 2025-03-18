@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Akun</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Mengatur jenis font */
+        }
+        label {
+            display: block; /* Menampilkan label pada baris baru */
+            margin-bottom: 5px; /* Memberikan margin bawah pada label */
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%; /* Mengatur lebar input menjadi penuh */
+            padding: 8px; /* Memberikan padding pada input */
+            margin-bottom: 10px; /* Memberikan margin bawah pada input */
+            box-sizing: border-box; /* Menyertakan padding dan border dalam lebar input */
+        }
+        input[type="radio"] {
+            margin-right: 5px; /* Memberikan margin kanan pada radio button */
+        }
+    </style>
+</head>
+<body>
+    <h1>Registrasi Akun</h1>
+
+    <h2>Formulir Registrasi</h2>
+    <form>  <!-- Formulir registrasi -->
+        <label for="nama">Masukkan nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Geraldine Isabel Manalu" required>
+
+        <label for="nim">Masukkan NIM:</label>
+        <input type="text" id="nim" name="nim" placeholder="202332016" required>
+
+        <label for="email">Masukkan email:</label>
+        <input type="email" id="email" name="email" placeholder="geraldine2332016@itpln.ac.id" required>
+
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required><label for="laki-laki">Laki-Laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required><label for="perempuan">Perempuan</label>
+
+        <label for="agama">Agama:</label>
+        <select id="agama" name="kristen" required>
+            <option value="">Kristen</option>
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+            <!-- Tambahkan opsi agama lain sesuai kebutuhan -->
+        </select>
+
+        <label for="password">Masukkan password:</label>
+        <input type="password" id="password" name="password" placeholder="Abelmanalu28" required>
+
+        <label for="konfirmasi_password">Konfirmasi password:</label>
+        <input type="password" id="konfirmasi_password" name="konfirmasi_password" placeholder="Konfirmasi Password Anda" required>
+
+        <input type="submit" value="Daftar"> <!-- Tombol daftar -->
+    </form>
+</body>
+</html>
